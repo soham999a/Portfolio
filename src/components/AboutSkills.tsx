@@ -224,7 +224,7 @@ const AboutSkills = () => {
             <p className="text-gray-400 max-w-3xl mx-auto">
               Technology evolves rapidly, and so do I. I&apos;m constantly learning new frameworks,
               exploring emerging technologies, and refining my craft to deliver cutting-edge solutions 
-              that meet tomorrow's challenges today.
+              that meet tomorrow&apos;s challenges today.
             </p>
           </div>
         </motion.div>

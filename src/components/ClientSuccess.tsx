@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Award, Clock, TrendingUp } from 'lucide-react';
 import { gsap } from 'gsap';
@@ -14,7 +14,7 @@ const ClientSuccess = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const counterRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
-  const metrics = [
+  const metrics = useMemo(() => [
     {
       icon: Users,
       number: 100,
@@ -43,7 +43,7 @@ const ClientSuccess = () => {
       label: 'Repeat Clients',
       description: 'Long-term partnerships and ongoing collaborations',
     },
-  ];
+  ], []);
 
   const testimonials = [
     {
