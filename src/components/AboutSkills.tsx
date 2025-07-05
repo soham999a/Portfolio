@@ -58,8 +58,8 @@ const AboutSkills = () => {
 
     // Animate skill bars
     const skillBars = gsap.utils.toArray('.skill-bar');
-    skillBars.forEach((bar: Element) => {
-      const level = bar.dataset.level;
+    skillBars.forEach((bar: any) => {
+      const level = (bar as HTMLElement).dataset.level;
       gsap.fromTo(bar, 
         { width: '0%' },
         {
