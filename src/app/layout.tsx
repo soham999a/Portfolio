@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://soham-portfolio.vercel.app'),
+  metadataBase: new URL('https://code-till-sayonara.vercel.app'),
   title: "👨‍💻 CODE_TILL_SAYONARA ✨💻",
   description: "4th year B.Tech ECE student, self-taught frontend developer with 2+ years experience, and conversion copywriter with 100+ happy clients. Specializing in React, TypeScript, and persuasive copy that converts.",
   keywords: ["Frontend Developer", "React Developer", "TypeScript", "Copywriter", "Web Developer", "Freelancer", "Next.js", "Tailwind CSS"],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "👨‍💻 CODE_TILL_SAYONARA ✨💻",
     description: "Building experiences that feel magical and words that convert browsers into buyers",
-    url: "https://soham-portfolio.vercel.app",
+    url: "https://code-till-sayonara.vercel.app",
     siteName: "Soham Das Portfolio",
     images: [
       {
