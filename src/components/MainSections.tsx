@@ -18,7 +18,7 @@ const MainSections = () => {
 
     const sections = gsap.utils.toArray('.main-section-card');
     
-    sections.forEach((section: any) => {
+    sections.forEach((section: unknown) => {
       gsap.fromTo(section, 
         {
           y: 100,

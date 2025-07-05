@@ -125,7 +125,7 @@ const ProjectsShowcase = () => {
 
     const projectCards = gsap.utils.toArray('.project-card');
     
-    projectCards.forEach((card: any, index) => {
+    projectCards.forEach((card: unknown, index) => {
       gsap.fromTo(card, 
         {
           y: 80,

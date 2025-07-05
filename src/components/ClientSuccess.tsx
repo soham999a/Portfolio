@@ -95,7 +95,7 @@ const ClientSuccess = () => {
 
     // Animate testimonial cards
     const testimonialCards = gsap.utils.toArray('.testimonial-card');
-    testimonialCards.forEach((card: any, index) => {
+    testimonialCards.forEach((card: unknown, index) => {
       gsap.fromTo(card, 
         {
           y: 60,
