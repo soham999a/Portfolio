@@ -118,14 +118,14 @@ const ProjectsShowcase = () => {
     ? projects 
     : projects.filter(project => project.category === filter);
 
-  const featuredProjects = projects.filter(project => project.featured);
+  // const featuredProjects = projects.filter(project => project.featured);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
     const projectCards = gsap.utils.toArray('.project-card');
     
-    projectCards.forEach((card: any, index) => {
+    projectCards.forEach((card: Element, index) => {
       gsap.fromTo(card, 
         {
           y: 80,

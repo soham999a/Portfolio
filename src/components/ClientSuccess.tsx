@@ -95,7 +95,7 @@ const ClientSuccess = () => {
 
     // Animate testimonial cards
     const testimonialCards = gsap.utils.toArray('.testimonial-card');
-    testimonialCards.forEach((card: any, index) => {
+    testimonialCards.forEach((card: Element, index) => {
       gsap.fromTo(card, 
         {
           y: 60,
@@ -119,7 +119,7 @@ const ClientSuccess = () => {
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-  }, []);
+  }, [metrics]);
 
   return (
     <section ref={sectionRef} className="py-32 bg-slate-950">
@@ -201,7 +201,7 @@ const ClientSuccess = () => {
 
               {/* Testimonial Content */}
               <blockquote className="text-gray-300 mb-6 leading-relaxed">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </blockquote>
 
               {/* Client Info */}
@@ -229,7 +229,7 @@ const ClientSuccess = () => {
               Ready to Join My Success Stories?
             </h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Let's work together to create something amazing that drives real results for your business.
+              Let&apos;s work together to create something amazing that drives real results for your business.
             </p>
             <motion.a
               href="#contact"

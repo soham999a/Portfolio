@@ -1,10 +1,9 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
-import { gsap } from 'gsap';
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -151,7 +150,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 border-2 border-gray-600 hover:border-blue-400 text-gray-300 hover:text-white font-semibold rounded-full transition-all duration-300"
             >
-              Let's Connect
+              Let&apos;s Connect
             </motion.a>
           </motion.div>
         </div>

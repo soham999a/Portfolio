@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Palette, Zap, BookOpen, Target } from 'lucide-react';
+import { Code, Zap, BookOpen, Target } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -58,7 +58,7 @@ const AboutSkills = () => {
 
     // Animate skill bars
     const skillBars = gsap.utils.toArray('.skill-bar');
-    skillBars.forEach((bar: any) => {
+    skillBars.forEach((bar: Element) => {
       const level = bar.dataset.level;
       gsap.fromTo(bar, 
         { width: '0%' },
@@ -116,7 +116,7 @@ const AboutSkills = () => {
               
               <div className="space-y-4 text-gray-300">
                 <p>
-                  I'm a 4th year B.Tech ECE student who discovered my passion for creating digital experiences. 
+                  I&apos;m a 4th year B.Tech ECE student who discovered my passion for creating digital experiences.
                   What started as curiosity about web development has evolved into expertise across multiple domains.
                 </p>
                 
@@ -126,7 +126,7 @@ const AboutSkills = () => {
                 </p>
                 
                 <p>
-                  With over 100 satisfied clients and 2+ years of hands-on experience, I've learned that the best 
+                  With over 100 satisfied clients and 2+ years of hands-on experience, I&apos;ve learned that the best
                   solutions come from understanding both the technical requirements and the human psychology behind them.
                 </p>
               </div>
@@ -222,7 +222,7 @@ const AboutSkills = () => {
               Continuous Learning & Growth
             </h3>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              Technology evolves rapidly, and so do I. I'm constantly learning new frameworks, 
+              Technology evolves rapidly, and so do I. I&apos;m constantly learning new frameworks,
               exploring emerging technologies, and refining my craft to deliver cutting-edge solutions 
               that meet tomorrow's challenges today.
             </p>

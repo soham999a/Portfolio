@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+// Removed unused imports
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import MainSections from '@/components/MainSections';

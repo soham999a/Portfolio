@@ -94,7 +94,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-6xl font-bold text-white mb-6"
           >
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl text-gray-400 max-w-3xl mx-auto"
           >
-            Ready to turn your ideas into reality? Let's discuss your project and create something extraordinary together.
+            Ready to turn your ideas into reality? Let&apos;s discuss your project and create something extraordinary together.
           </motion.p>
         </div>
 

@@ -18,7 +18,7 @@ const MainSections = () => {
 
     const sections = gsap.utils.toArray('.main-section-card');
     
-    sections.forEach((section: any, index) => {
+    sections.forEach((section: Element) => {
       gsap.fromTo(section, 
         {
           y: 100,
@@ -140,7 +140,7 @@ const MainSections = () => {
 
         {/* Main Sections Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {sections.map((section, index) => {
+          {sections.map((section) => {
             const colorClasses = getColorClasses(section.color);
             const Icon = section.icon;
 
