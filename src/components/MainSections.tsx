@@ -19,7 +19,8 @@ const MainSections = () => {
     const sections = gsap.utils.toArray('.main-section-card');
     
     sections.forEach((section: unknown) => {
-      gsap.fromTo(section, 
+      const element = section as HTMLElement;
+      gsap.fromTo(element,
         {
           y: 100,
           opacity: 0,
@@ -32,7 +33,7 @@ const MainSections = () => {
           duration: 1.2,
           ease: 'back.out(1.7)',
           scrollTrigger: {
-            trigger: section,
+            trigger: element,
             start: 'top 80%',
             end: 'bottom 20%',
             toggleActions: 'play none none reverse',

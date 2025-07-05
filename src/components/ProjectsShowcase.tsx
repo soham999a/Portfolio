@@ -126,7 +126,8 @@ const ProjectsShowcase = () => {
     const projectCards = gsap.utils.toArray('.project-card');
     
     projectCards.forEach((card: unknown, index) => {
-      gsap.fromTo(card, 
+      const element = card as HTMLElement;
+      gsap.fromTo(element,
         {
           y: 80,
           opacity: 0,
@@ -139,7 +140,7 @@ const ProjectsShowcase = () => {
           duration: 1,
           ease: 'back.out(1.7)',
           scrollTrigger: {
-            trigger: card,
+            trigger: element,
             start: 'top 85%',
             end: 'bottom 15%',
             toggleActions: 'play none none reverse',

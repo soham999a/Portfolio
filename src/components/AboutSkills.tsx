@@ -68,7 +68,7 @@ const AboutSkills = () => {
           duration: 1.5,
           ease: 'back.out(1.7)',
           scrollTrigger: {
-            trigger: bar,
+            trigger: element,
             start: 'top 85%',
             toggleActions: 'play none none reverse',
           },
