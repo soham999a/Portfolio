@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
     unoptimized: false,
   },
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Disabled for Vercel compatibility
   },
   compress: true,
   poweredByHeader: false,
