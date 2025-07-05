@@ -162,7 +162,7 @@ const ClientSuccess = () => {
                 </div>
                 <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                   <span 
-                    ref={el => counterRefs.current[index] = el}
+                    ref={el => { counterRefs.current[index] = el; }}
                     className="counter"
                   >
                     0
